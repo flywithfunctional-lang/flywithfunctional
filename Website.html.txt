@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FIT.with_k - Personal Trainer & Nutritionist</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; color: #333; }
+        header { background: #2c3e50; color: white; padding: 20px 0; text-align: center; }
+        nav { margin: 15px 0; text-align: center; }
+        nav a { color: #2c3e50; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        section { max-width: 960px; margin: 20px auto; background: white; padding: 20px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+        footer { background: #2c3e50; color: white; text-align: center; padding: 15px 0; margin-top: 30px; }
+        h1, h2 { color: #27ae60; }
+        .btn { background: #27ae60; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+        .btn:hover { background: #219150; }
+        form { max-width: 400px; margin: 20px 0; }
+        label { display: block; margin: 10px 0 5px; }
+        input, select, textarea { width: 100%; padding: 8px; box-sizing: border-box; }
+        .social-links a { margin: 0 10px; color: #2c3e50; text-decoration: none; font-weight: bold; font-size: 18px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FIT.with_k</h1>
+    <p>Your Personal Trainer & Nutritionist Partner</p>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Book a Session</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Kaustubh, a certified personal trainer and nutritionist dedicated to helping you achieve your fitness and health goals. With expertise in personalized workout programming and nutrition coaching, I focus on holistic health and sustainable results.</p>
+</section>
+
+<section id="services">
+    <h2>Services Offered</h2>
+    <ul>
+        <li>Personal Training Programs (in-person & online)</li>
+        <li>Customized Nutrition Plans</li>
+        <li>Weight Management Coaching</li>
+        <li>Yoga and Pilates Sessions</li>
+        <li>Weekend Group Fitness Workshops</li>
+    </ul>
+</section>
+
+<section id="booking">
+    <h2>Book a Session</h2>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_xclick" />
+        <input type="hidden" name="business" value="your-paypal-email@example.com" />
+        <input type="hidden" name="item_name" value="Personal Training Session" />
+        <input type="hidden" name="currency_code" value="INR" />
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="cn" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time">Preferred Time</label>
+        <select id="time" name="time" required>
+            <option value="" disabled selected>Select a time</option>
+            <option>6:00 AM - 7:00 AM</option>
+            <option>7:00 AM - 8:00 AM</option>
+            <option>8:00 AM - 9:00 AM</option>
+            <option>5:00 PM - 6:00 PM</option>
+            <option>6:00 PM - 7:00 PM</option>
+        </select>
+
+        <label for="notes">Additional Notes</label>
+        <textarea id="notes" name="on0" placeholder="Any specific goals or questions?"></textarea>
+
+        <input type="hidden" name="amount" value="1500" />
+        <input type="submit" value="Pay & Book Now" class="btn" />
+    </form>
+</section>
+
+<section id="testimonials">
+    <h2>Client Testimonials</h2>
+    <blockquote>"Kaustubh helped me transform my lifestyle with effective workouts and nutrition advice. Highly recommended!" - Anika S.</blockquote>
+    <blockquote>"Professional, supportive, and knowledgeable. My fitness journey has never been better." - Rohan M.</blockquote>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Ready to start your fitness journey?</p>
+    <p>Email: fit.with.k@example.com</p>
+    <p>Phone: +91 9876543210</p>
+    <div class="social-links">
+        <a href="https://instagram.com/fit.with_k" target="_blank">Instagram</a> | 
+        <a href="https://linkedin.com/in/kaustubh" target="_blank">LinkedIn</a>
+    </div>
+    <a href="mailto:fit.with.k@example.com" class="btn">Send Email</a>
+</section>
+
+<footer>
+    <p>© 2025 FIT.with_k | Personal Training & Nutrition Coaching</p>
+</footer>
+
+</body>
+</html>
